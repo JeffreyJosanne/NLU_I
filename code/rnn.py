@@ -87,9 +87,12 @@ class RNN(object):
 		for t in range(len(x)):
 			##########################
 			# --- your code here --- #
+			s[t] = sigmoid(np.dot(self.V,x[t]) + np.dot(self.U, s[t-1]))
+			y[t] = softmax(np.dot(self.W, s[t]))
+
+
 			##########################
-		
-		return y, s
+		return y,s
 	
 	def acc_deltas(self, x, d, y, s):
 		'''
