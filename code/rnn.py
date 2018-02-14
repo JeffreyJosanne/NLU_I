@@ -203,7 +203,8 @@ class RNN(object):
 		loss = 0.
 		
 		##########################
-		# --- your code here --- #
+		for t in len(x):
+			loss += -np.dot(d[t], np.log(predict(x)))
 		##########################
 		
 		return loss
@@ -290,13 +291,14 @@ class RNN(object):
 		return mean_loss		average loss over all words in D
 		'''
 		
-		mean_loss = 0.
-		
-		##########################
-		# --- your code here --- #
-		##########################
-		
-		return mean_loss
+		mean_loss = 0
+		words_in_D = 0
+		for i in range(len(X)):
+			x = X[i]
+			d = D[i]
+			mean_loss += compute_loss(x,d)
+			words_in_D += len(d)
+		return mean_loss/words_in_D
 	
 		
 	def train(self, X, D, X_dev, D_dev, epochs=10, learning_rate=0.5, anneal=5, back_steps=0, batch_size=100, min_change=0.0001, log=True):
