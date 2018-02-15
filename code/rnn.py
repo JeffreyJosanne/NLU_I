@@ -661,15 +661,22 @@ if __name__ == "__main__":
 		##########################
 		# --- your code here --- #
 		##########################
-		i = 0.5
-		j = 2
-		k = 25
-		min_value_loss = 0
-
-		model = RNN(vocab_size, k)
-		min_value_loss = model.train(X_train, D_train, X_dev, D_dev, epochs=10, learning_rate=i,anneal=5, back_steps=j, batch_size=100, min_change=0.0001, log=True)
-		best_params = (k, j, i)
-
+		learning_rate = [0.5, 0.1, 0.05, 0.01]
+		back_steps = [0, 2, 5]
+		hidden_units = [25, 50, 100, 200, 500, 1000]
+		grid = np.zeros((len(learning_rate), len(back_steps), len(hidden_units)))
+		for lr in range(len(learning_rate)):
+			for bs in range(len(back_steps)):
+				for hu in range(len(hidden_units)):
+					model = RNN(vocab_size, hidden_units[hu], vocab_size)
+					loss = model.train(X_train, D_train, X_dev, D_dev, epochs=10, learning_rate=learning_rate[lr],anneal=5, back_steps=back_steps[bs], batch_size=100, min_change=0.0001, log=True)
+					grid[lr][bs][hu] = loss
+					print(loss)
+					print(lr)
+					print(bs)
+					print(hu)
+		print('optimal indices:')
+		print(np.argmax(grid))
 	if mode == "train":
 		'''
 		starter code for parameter estimation.
