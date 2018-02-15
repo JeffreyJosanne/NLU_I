@@ -110,11 +110,17 @@ class RNN(object):
 		
 		no return values
 		'''
-		
+		I = np.ones((1,len(x)))
 		for t in reversed(range(len(x))):
-			##########################
-			# --- your code here --- #
-			##########################
+			target = make_onehot(d[t],self.vocab_size)
+            delta_out = (target-y[t]) * I # Which is basically nothing
+            self.deltaW += np.outer(delta_out, s[t])
+            sigmoid_grad = s[t] * (1-s[t])
+            affine = np.dot(W.T, delta_out)
+            delta_in = affine * sigmoid_grad
+            x_in_onehot = make_onehot(x[t], self.vocab_size)
+            self.deltaV += np.outer(delta_in, x_in_onehot)
+            self.deltaU += outer(delta_in, s[t-1])
 
 
 	def acc_deltas_np(self, x, d, y, s):
@@ -162,6 +168,20 @@ class RNN(object):
 			##########################
 			# --- your code here --- #
 			##########################
+			I = np.ones((1,len(x)))
+			for t in reversed(range(len(x))):
+				target = make_onehot(d[t],self.vocab_size)
+				delta_out = (target-y[t]) * I # Which is basically nothing
+				self.deltaW += np.outer(delta_out, s[t])
+				sigmoid_grad = s[t] * (1-s[t])
+				affine = np.dot(self.W.T, delta_out)
+				delta_in = affine * sigmoid_grad
+				for t2 in arange(max(t - steps,0), t):
+					temp_one_hot = make_onehot(x[t2], self.vocab_size)
+					self.deltaV += np.outer(delta_in, temp_one_hot)
+					self.deltaU += np.outer(delta_in, s[t2-1])
+					temp_sigmoid_grad = s[t2-1] * (1-s[t2-1])
+					delta_in = np.dot(self.U.T, delta_in) * temp_sigmoid_grad
 
 
 	def acc_deltas_bptt_np(self, x, d, y, s, steps):
@@ -634,7 +654,63 @@ if __name__ == "__main__":
 		##########################
 		# --- your code here --- #
 		##########################
-		
+		i = 0.5
+		j = 2
+		k = 25
+		min_value_loss = 0
+
+		model = RNN(vocab_size, k)
+		min_value_loss = model.train(X_train, D_train, X_dev, D_dev, epochs=10, learning_rate=i,anneal=5, back_steps=j, batch_size=100, min_change=0.0001, log=True)
+		best_params = (k, j, i)
+
+	if mode == "train":
+		'''
+		starter code for parameter estimation.
+		change this to different values, or use it to get you started with your own testing class
+		'''
+
+		data_folder = sys.argv[2]
+		train_size = 25000
+		dev_size = 1000
+		vocab_size = 2000
+
+		hdim = int(sys.argv[3])
+		lookback = int(sys.argv[4])
+		lr = float(sys.argv[5])
+
+		# get the data set vocabulary
+		vocab = pd.read_table(data_folder + "/vocab.ptb.txt", header=None, sep="\s+", index_col=0, names=['count', 'freq'], )
+		num_to_word = dict(enumerate(vocab.index[:vocab_size]))
+		word_to_num = invert_dict(num_to_word)
+
+		# calculate loss vocabulary words due to vocab_size
+		fraction_lost = fraq_loss(vocab, word_to_num, vocab_size)
+		print("Retained %d words from %d (%.02f%% of all tokens)\n" % (vocab_size, len(vocab), 100*(1-fraction_lost)))
+
+		docs = load_dataset(data_folder + '/ptb-train.txt')
+		S_train = docs_to_indices(docs, word_to_num)
+		X_train, D_train = seqs_to_lmXY(S_train)
+
+		# Load the dev set (for tuning hyperparameters)
+		docs = load_dataset(data_folder + '/ptb-dev.txt')
+		S_dev = docs_to_indices(docs, word_to_num)
+		X_dev, D_dev = seqs_to_lmXY(S_dev)
+
+		X_train = X_train[:train_size]
+		D_train = D_train[:train_size]
+		X_dev = X_dev[:dev_size]
+		D_dev = D_dev[:dev_size]
+
+		# q = best unigram frequency from omitted vocab
+		# this is the best expected loss out of that set
+		q = vocab.freq[vocab_size] / sum(vocab.freq[vocab_size:])
+
+		model_final = RNN(vocab_size, 50)
+		model_final.train(X_train, D_train, X_dev, D_dev, epochs=10, learning_rate=0.5, anneal=5, back_steps=2, batch_size=100, min_change=0.0001, log=True)
+		np.save("rnn.U.npy", model_final.U)
+		np.save("rnn.V.npy", model_final.V)
+		np.save("rnn.W.npy", model_final.W)
+
 		run_loss = -1
     adjusted_loss = -1
 
