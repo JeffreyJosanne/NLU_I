@@ -24,7 +24,7 @@ deltaW_3_exp = np.array([[-2.36320453, -2.24145091], [ 3.13861959,  2.93420307],
 vocabsize = 3
 hdim = 2
 # RNN with vocab size 3 and 2 hidden layers
-r = RNN(vocabsize,hdim)
+r = RNN(vocabsize,hdim, vocabsize)
 r.V[0][0]=0.7
 r.V[0][1]=0.3
 r.V[0][2]=0.4
@@ -69,7 +69,7 @@ loss = r.compute_loss(x,d)
 loss2 = r.compute_loss(x2,d2)
 loss3 = r.compute_loss(x3,d3)
 mean_loss = r.compute_mean_loss([x,x2,x3],[d,d2,d3])
-if not np.isclose(loss_expected, loss, rtol=1e-08, atol=1e-08) or not np.isclose(loss2_expected, loss2, rtol=1e-08, atol=1e-08) or not np.isclose(loss3_expected, loss3, rtol=1e-08, atol=1e-08):
+if not np.isclose(loss_expected, loss, rtol=1e-08, atol=1e-08).any() or not np.isclose(loss2_expected, loss2, rtol=1e-08, atol=1e-08).any() or not np.isclose(loss3_expected, loss3, rtol=1e-08, atol=1e-08).any():
 	print("loss expected: {0}".format(loss_expected))
 	print("loss received: {0}".format(loss))
 	print("loss2 expected: {0}".format(loss2_expected))
@@ -78,7 +78,7 @@ if not np.isclose(loss_expected, loss, rtol=1e-08, atol=1e-08) or not np.isclose
 	print("loss3 received: {0}".format(loss3))
 else:
 	print("loss passed")
-if not np.isclose(mean_loss_expected, mean_loss, rtol=1e-08, atol=1e-08):
+if not np.isclose(mean_loss_expected, mean_loss, rtol=1e-08, atol=1e-08).any():
 	print("mean loss expected: {0}".format(mean_loss_expected))
 	print("mean loss received: {0}".format(mean_loss))
 else:

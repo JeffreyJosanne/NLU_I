@@ -69,7 +69,6 @@ class RNN(object):
 	def predict(self, x):
 		'''
 		predict an output sequence y for a given input sequence x
-		
 		x	list of words, as indices, e.g.: [0, 4, 2]
 		
 		returns	y,s
@@ -83,14 +82,17 @@ class RNN(object):
 		# s has one more row, since we need to look back even at time 0 (s(t=0-1) will just be [0. 0. ....] )
 		s = np.zeros((len(x) + 1, self.hidden_dims))
 		y = np.zeros((len(x), self.out_vocab_size))
-		
+		x = x.reshape(x.shape[0],1)
+		print(x.shape)
+		print(s.shape)
+		print(self.U.shape)
+		print(self.V.shape)	
 		for t in range(len(x)):
 			##########################
 			# --- your code here --- #
-			s[t] = sigmoid(np.dot(self.V,x[t]) + np.dot(self.U, s[t-1]))
+			convert_to_one_hot = make_onehot(x[t], self.vocab_size)
+			s[t] = sigmoid(np.dot(self.V, convert_to_one_hot) + np.dot(self.U, s[t-1]))
 			y[t] = softmax(np.dot(self.W, s[t]))
-
-
 			##########################
 		return y,s
 	
@@ -113,14 +115,15 @@ class RNN(object):
 		I = np.ones((1,len(x)))
 		for t in reversed(range(len(x))):
 			target = make_onehot(d[t],self.vocab_size)
-            delta_out = (target-y[t]) * I # Which is basically nothing
-            self.deltaW += np.outer(delta_out, s[t])
-            sigmoid_grad = s[t] * (1-s[t])
-            affine = np.dot(W.T, delta_out)
-            delta_in = affine * sigmoid_grad
-            x_in_onehot = make_onehot(x[t], self.vocab_size)
-            self.deltaV += np.outer(delta_in, x_in_onehot)
-            self.deltaU += outer(delta_in, s[t-1])
+			delta_out = (target-y[t]) 
+			# * I # Which is basically nothing
+			self.deltaW += np.outer(delta_out, s[t])
+			sigmoid_grad = s[t] * (1-s[t])
+			affine = np.dot(self.W.T, delta_out)
+			delta_in = affine * sigmoid_grad
+			x_in_onehot = make_onehot(x[t], self.vocab_size)
+			self.deltaV += np.outer(delta_in, x_in_onehot)
+			self.deltaU += np.outer(delta_in, s[t-1])
 
 
 	def acc_deltas_np(self, x, d, y, s):
@@ -163,25 +166,28 @@ class RNN(object):
 		
 		no return values
 		'''
+		I = np.ones((1,len(x)))
 		for t in reversed(range(len(x))):
 			# print("time {0}".format(t))
 			##########################
 			# --- your code here --- #
 			##########################
-			I = np.ones((1,len(x)))
-			for t in reversed(range(len(x))):
-				target = make_onehot(d[t],self.vocab_size)
-				delta_out = (target-y[t]) * I # Which is basically nothing
-				self.deltaW += np.outer(delta_out, s[t])
-				sigmoid_grad = s[t] * (1-s[t])
-				affine = np.dot(self.W.T, delta_out)
-				delta_in = affine * sigmoid_grad
-				for t2 in arange(max(t - steps,0), t):
-					temp_one_hot = make_onehot(x[t2], self.vocab_size)
-					self.deltaV += np.outer(delta_in, temp_one_hot)
-					self.deltaU += np.outer(delta_in, s[t2-1])
-					temp_sigmoid_grad = s[t2-1] * (1-s[t2-1])
-					delta_in = np.dot(self.U.T, delta_in) * temp_sigmoid_grad
+			target = make_onehot(d[t],self.vocab_size)
+			delta_out = (target-y[t]) 
+			# * I # Which is basically nothing
+			sigmoid_grad = s[t] * (1-s[t])
+			affine = np.dot(self.W.T, delta_out)
+			delta_in = affine * sigmoid_grad
+			self.deltaW += np.outer(delta_out, s[t])
+			self.deltaV += np.outer(delta_in, make_onehot(x[t], len(y[t])))
+			self.deltaU += np.outer(delta_in, s[t-1])
+			
+			for t2 in range(max(t - steps,0), t):
+				temp_sigmoid_grad = s[t2-1] * (1-s[t2-1])
+				delta_in = np.dot(self.U.T, delta_in) * temp_sigmoid_grad
+				temp_one_hot = make_onehot(x[t2], self.vocab_size)
+				self.deltaV += np.outer(delta_in, temp_one_hot)
+				self.deltaU += np.outer(delta_in, s[t2-1])
 
 
 	def acc_deltas_bptt_np(self, x, d, y, s, steps):
@@ -223,8 +229,9 @@ class RNN(object):
 		loss = 0.
 		
 		##########################
-		for t in len(x):
-			loss += -np.dot(d[t], np.log(predict(x)))
+		y, s = self.predict(x)
+		for t in range(len(x)):
+			loss -= np.log(y[t, d[t]])
 		##########################
 		
 		return loss
@@ -311,12 +318,12 @@ class RNN(object):
 		return mean_loss		average loss over all words in D
 		'''
 		
-		mean_loss = 0
+		mean_loss = 0.
 		words_in_D = 0
 		for i in range(len(X)):
 			x = X[i]
 			d = D[i]
-			mean_loss += compute_loss(x,d)
+			mean_loss += self.compute_loss(x,d)
 			words_in_D += len(d)
 		return mean_loss/words_in_D
 	
@@ -712,11 +719,7 @@ if __name__ == "__main__":
 		np.save("rnn.W.npy", model_final.W)
 
 		run_loss = -1
-    adjusted_loss = -1
-
-    print("Unadjusted: %.03f" % np.exp(run_loss))
-    print("Adjusted for missing vocab: %.03f" % np.exp(adjusted_loss))
-
+	adjusted_loss = -1
 
 	if mode == "train-np":
 		'''
