@@ -1,0 +1,330 @@
+sentence	subj_idx	verb_idx	verb_pos	verb	inflected_verb
+a priest explains that the stone is from the blood of NNP .	1	2	VBZ	explains	explain
+the american federation of musicians recording ban ends , and the union becomes an integral part of the american music industry .	11	12	VBZ	becomes	become
+another interpretation , amongst NNS , is that the phrase refers to the established church of england .	9	10	VBZ	refers	refer
+perhaps in the sense that the tracks are new recordings , not necessarily of original material .	6	7	VBP	are	is
+some supports act as a NN to prevent JJ materials from NN .	1	2	VBP	act	acts
+the NNS of the region are generally distinct from those of the south and of the urban areas of the american northeast .	1	5	VBP	are	is
+the village even has a JJ channel from the sea for easy fishing and transportation access in ancient times .	1	3	VBZ	has	have
+physician writers are physicians who write RB in fields outside their practice of medicine .	1	2	VBP	are	is
+some NNS explain this NN by arguing that middle NNP languages were built on a JJ NN .	1	2	VBP	explain	explains
+this product is notable and well known .	1	2	VBZ	is	are
+but , and here is the key issue , email is RB JJ .	9	10	VBZ	is	are
+NNP NNP 's novel the NNP case ( 1917 ) is about a physician who is VBN after performing NN on his dying NN .	3	10	VBZ	is	are
+in bad fur day , don NNP also appeared in the NNP variant of NNP , in which he is again conducting a robbery of the NNP reserve bank , although the layout is much different .	32	33	VBZ	is	are
+your understanding of the purpose of these NNS , and also what constitutes their violation , is at NN with virtually everyone commenting in this space .	1	12	VBZ	constitutes	constitute
+the criteria states ; `` if reliable sources cover the person only in the context of a particular event , and if that person otherwise remains , or is likely to remain , low profile , then a separate biography is unlikely to be VBN .	39	40	VBZ	is	are
+measurement of JJ NN is a JJ test for JJ NN , including JJ NN disease .	0	4	VBZ	is	are
+per the gfdl , a merge requires a redirect to be left behind .	5	6	VBZ	requires	require
+in the united states , its main JJ competitors include NNP NNP NNP , a subsidiary of NNP ; and NNP hill education , a division of the NNP hill companies , inc .	8	9	VBP	include	includes
+oppose NNP in NN indicates candidate is not yet prepared to handle many daily admin tasks .	5	6	VBZ	is	are
+this JJ NN occurs in the NNP languages and also in old chinese .	2	3	VBZ	occurs	occur
+this award VBZ outstanding papers concerning clinical results and techniques .	1	2	VBZ	recognises	recognise
+another JJ practice , known as NN of responsibility , operates by VBG the relationship between actions and the effects they cause .	2	10	VBZ	operates	operate
+since the original university VBN , both the new universities are NNS of the original one .	9	10	VBP	are	is
+examples include protein NN , chemical reactions and NN .	0	1	VBP	include	includes
+other communities surrounding the NNP arm include mount NNP , NNP arm south , NNP harbour , hughes brook , NNP , meadows , NNP , and NNP .	1	6	VBP	include	includes
+JJ NNP species look very similar .	2	3	VBP	look	looks
+legend claims that the art is over 800 years old , passed down from generation to generation .	4	5	VBZ	is	are
+their habitat is JJ areas and sometimes JJ NNS , generally JJ , and sometimes in towns .	1	2	VBZ	is	are
+his name is actually a NN word , VBP the first two letters are from his father NNP , and the last three from his mother , margaret NNP .	12	13	VBP	are	is
+maybe he thinks that one user has to be blocked for every NN who is blocked or warned .	5	6	VBZ	has	have
+south of NNP the road is for a distance before rising to as it passes NNP , after which it VBZ the national speed limit ( ) .	4	5	VBZ	is	are
+this type of forest shows no substantial seasonal behavior .	1	4	VBZ	shows	show
+the issue here is that none of it is sourced , and that can be problematic in a blp ( in fact , the edits appear to have actually removed a half dozen of the source links that were previously there .	1	3	VBZ	is	are
+the body of the pump is often in open connection with the NN side of the pump .	1	5	VBZ	is	are
+the talk page discussion seems to be making progress .	3	4	VBZ	seems	seem
+despite these challenges , NNP people continue to practice many elements of their traditional culture with much success .	5	6	VBP	continue	continues
+the ring of truth ( 2001 ) mick is on 9 of the 12 songs .	1	8	VBZ	is	are
+king NNP ( CD ad ) , the most influential of these physicians , wrote the NNP NNP , a comprehensive manuscript which sri NNP physicians still use today for reference .	25	27	VBP	use	uses
+the main entrance is in farm street , but it can also be accessed from the its mount street entrance .	2	3	VBZ	is	are
+i 've seen topic NNS being VB if the editor VBZ an article during the ban .	9	10	VBZ	touches	touch
+he described the group 's sound as `` russian submarine music '' , explaining that the record VBZ a lot more voice than the guitar , the result VBG like a choir performing underwater .	16	17	VBZ	utilizes	utilize
+VBN men 's living NNS are often detailed in fiction in a way in which women 's NNS are not .	17	18	VBP	are	is
+in NNP , switzerland , the draw takes place for the knockout round of 16 of the uefa champions league and round of 32 of the uefa cup .	6	7	VBZ	takes	take
+stations for the vessel from date of transfer until 1895 and a permanent station include marking wolf trap NN from december 10 , 1893 until march 16 , 1884 after a NN explosion had disabled NNP on august 28 , 1893 and that vessel was withdrawn for repair .	0	14	VBP	include	includes
+the line is JJ , an JJ NN of NN , but at the same time full of dramatic images of NN and NN .	1	2	VBZ	is	are
+strong keep - the new inline disambiguation on civil religion explains that civic religion is an extreme form of the former .	13	14	VBZ	is	are
+the wikipedia article on the NNP theorem on the other hand presents it as if the NN values always VBP the classical JJ laws .	2	11	VBZ	presents	present
+most species are rather small varying from 4 to 15 NNS in size .	1	2	VBP	are	is
+these standards are generally the same for such elements as track gauge , scale ratio , NNS , and electrical power and differ for NNS and other factors that are specific to the prototype being VBN .	1	2	VBP	are	is
+the section is a summary of an article about an NNP raid .	1	2	VBZ	is	are
+a hand such as is an JJ straight ( also known as `` broadway '' or `` royal straight '' ) , and ranks above a JJ straight such as .	1	4	VBZ	is	are
+in india , parents often place JJ ads in newspapers or online , and may post the NNS of the JJ bride or NN .	3	5	VBP	place	places
+the surrounding district is mainly agricultural and pastoral , producing NNS , VB , cotton , olive oil , cattle , sheep , NNS , NNS and NN .	2	3	VBZ	is	are
+given that foundation staff and NNS are legally VBN not to do content work , any new work on the encyclopedia falls to us , the volunteers .	17	21	VBZ	falls	fall
+the only edition available is an iso image around CD NNP .	2	4	VBZ	is	are
+their patient is the home secretary - and they both have very good personal reasons to want him dead .	1	2	VBZ	is	are
+the school 's origins date back to the eighth century , when a tradition of education in NNP was begun by st NNP .	3	4	VBP	date	dates
+the significant expansion and cleanup required , along with the fact that no editor has explicitly expressed NN to do the required work , makes it very unlikely that this can be brought up to ga standard within reasonable time .	2	24	VBZ	makes	make
+list of songs about NN has rather flexible NN .	0	5	VBZ	has	have
+the position of the first image ( before the NN ) is unfortunate - it needs to be to the right of the text .	1	15	VBZ	needs	need
+filmed in northern uganda over a period of three years , the story follows the journey of a group of former child soldiers as they undergo a process of trauma therapy and emotional healing while in a rehabilitation center .	12	13	VBZ	follows	follow
+other NNS are active in NNP , principally amongst the welsh NNS as well as lutheran and muslim places of worship in NNP .	1	2	VBP	are	is
+others may incorporate NNP into a more supernatural NN in which the NNP NNS are more JJ to angels than physical aliens ; this distinction may be a little VBN within the overall NN .	13	14	VBP	are	is
+the monthly minimum fee is a way to ensure that merchants pay a minimum amount in fees each month to cover costs from the provider to maintain the account .	3	4	VBZ	is	are
+earlier today i had basically come to the conclusion that i should simply leave the issue alone and allow the information to be removed from the article , even though i completely disagree that the source is unreliable .	35	36	VBZ	is	are
+NNP station has CD free car parking spaces .	1	2	VBZ	has	have
+in the first two expressions a is the base , and the number of times a appears is the height ( add one for x ) .	12	16	VBZ	appears	appear
+imo , the article is quite far away from fa standards and i would VB the nominator to withdraw the fa nomination and instead , start a peer review , where further suggestions for improvements can be requested .	3	4	VBZ	is	are
+the day of judgment or NNP , NN , is one of the six articles of faith in islam .	1	9	VBZ	is	are
+NNP grave ( CD , relocated 1960 ) relocated to a position in front of the NN , the grave marks the tragic death of a child VBN by a snake on a nearby property .	19	20	VBZ	marks	mark
+a JJ NN is a tool generally used by NNS to cut fabric .	2	3	VBZ	is	are
+the club colours are green and red and the club grounds are called kelly NNP park .	2	3	VBP	are	is
+please note that the creators never finished the series , so NNP 's fate remains a mystery to this day .	13	14	VBZ	remains	remain
+a water body that bore the NN of industrial pollution a decade ago , the NNP lake , north of chennai , has today made an ecological NN , recording NN levels well within JJ limits .	2	22	VBZ	has	have
+assisted by various coaches , the manager sets the line-up and starting pitcher before each game , and makes NNS throughout the game .	6	7	VBZ	sets	set
+its name stands for `` NNP and NNP '' , the name of founder NNP and a partner NNP .	1	2	VBZ	stands	stand
+the other guidelines are that the episodes should progress to show john NNP 's and helena russell 's relationship develop and NN .	2	3	VBP	are	is
+when the state , local , or federal government takes private property that has water rights associated with private ownership , the value of that property is significantly affected by its water rights .	2	9	VBZ	takes	take
+according to the 2001 census , the village has a population of 27 people .	7	8	VBZ	has	have
+the critics claim that papers have not been written , but i have uploaded hundreds of papers .	1	2	VBP	claim	claims
+all other NNS have access to nearly comprehensive services , excluding some NN care .	2	3	VBP	have	has
+it is usually VBN with NN and NN with NN or chicken , in a NN sauce - a JJ version is also available .	20	21	VBZ	is	are
+these studies try to determine whether violations or exceptions might exist for well-known physical laws such as special NN ) and NNP NN , as predicted by some variations of quantum gravity , string theory , and some alternatives to general NN .	1	2	VBP	try	tries
+the NNP contrast set JJR NNS the task of learning from contrast sets as a tree search problem where the root node of the tree is an empty contrast set .	21	25	VBZ	is	are
+the groups usually consist of a JJ couple and their offspring .	1	3	VBP	consist	consists
+the four new houses are columbia ( red ) , NNP ( blue ) , challenger ( yellow ) and discovery ( green ) .	3	4	VBP	are	is
+the JJ shell has a JJ shape .	2	3	VBZ	has	have
+is there anyway we can modify the template so it displays the amount of NNS of NN a user wants .	18	19	VBZ	wants	want
+the animal remains belong to red fox , spotted NN , brown bear , wolf , lion , NN , NNS , NNS and etc .	1	2	VBZ	remains	remain
+cultural sites within the zone include the original cultivation ground of the NNP ( NNP ) tea variety , and a villa retreat used by NNP xi , a JJ NN NN of the NN or southern song empire .	1	5	VBP	include	includes
+a popular story holds that NNP studied NN with renowned NNP NNP NNP NNP NNP after being thrown down twice in a casual match with that master outside a NN .	2	3	VBZ	holds	hold
+the village 's calendar of cultural events includes a visit of the most famous JJ sites .	3	7	VBZ	includes	include
+most famous participant in the war is johnny NNP , who on september 25 , 1875 , kills james NNP .	2	6	VBZ	is	are
+NNP 's name is well known in the story of the 1970 marshall NNP NNP football team .	2	3	VBZ	is	are
+the NN really should have specified which kinds of NNS are to be used .	7	10	VBP	are	is
+NNP 's way of communication is a problem .	2	5	VBZ	is	are
+the inscription , in rather difficult latin , describes his career as a judge and VBZ his opposition to the king during the civil war .	1	8	VBZ	describes	describe
+i was proud of actually finding the part of facebook where i could report this problem some weeks ago , but have had no response , and the problem still exists .	28	30	VBZ	exists	exist
+male homosexuality is RB JJ , '' he told the new york times which also noted that bailey intended `` that the phrase means only that genes VBG homosexuality can not be favored by evolution if fewer such genes reach the next generation .	22	23	VBZ	means	mean
+although most of these groups are traditionally classified as NNS , the variation among them suggests that some are not closely related to NNS .	12	15	VBZ	suggests	suggest
+the question is whether these records carry any educational value , or whether this record keeping might VB to something JJ .	1	2	VBZ	is	are
+it is placed inside a shoe so that its JJ form fits the arch of the foot .	10	11	VBZ	fits	fit
+the rise of leslie vernon ( 2006 ) explains and talks extensively about this popular horror film convention ( although in the film , it is referred to as `` survivor girl '' ) , even using it as a major plot device .	1	8	VBZ	explains	explain
+this projection is an extension of the JJ singular value NN ( NNP ) to VB learning .	1	2	VBZ	is	are
+the result page first shows general information ( length , average NN ) .	2	4	VBZ	shows	show
+another version says that the baron ordered that his horse be prepared for an important journey , but NNP had VBN .	1	2	VBZ	says	say
+the title of NNP is an JJ title used commonly by all royal families of kerala .	1	4	VBZ	is	are
+your responsibility is to read his article i am fairly certain .	1	2	VBZ	is	are
+to the east , a bridge crosses NNP creek in front of an inland marsh to connect the NN area to the north end beach and NNP beach .	5	6	VBZ	crosses	cross
+this JJ book begins with a table of contents with a list of tables found in the book , followed by a brief introduction on page 4 .	2	3	VBZ	begins	begin
+as the force due to the interaction of electric charges falls off rapidly with increasing distance , the effect of the closer ( opposite NN ) charges is greater and the two objects feel a force of attraction .	2	10	VBZ	falls	fall
+though the edit count is rather low , the incredible civility and efficiency shows that the candidate has the capability VBN in that area .	16	17	VBZ	has	have
+NNS generally have a marginal ring of processes .	0	2	VBP	have	has
+NNP 's absence , her JJ house literally falls apart at the NNS and NNS , killing NNP .	2	8	VBZ	falls	fall
+for example , if all NNS that we have observed so far are white , we may VB that the possibility that all NNS are white is reasonable .	23	24	VBP	are	is
+the user apparently fails to VB the principles of wikipedia , and threatening someone with an rfc NNS on NN .	1	3	VBZ	fails	fail
+keep , fire departments are inherently verifiable , and certainly just as much of interest to readers as our thousands of articles on high schools .	3	4	VBP	are	is
+similar customs seem to have existed among the italian peoples .	1	2	VBP	seem	seems
+the increasing NN of these substances in the environment may explain the increasing NN of breast cancer , though direct evidence is JJ .	20	21	VBZ	is	are
+mixed NN minerals are JJ in nature .	2	3	VBP	are	is
+every JJ entity maps into a cardinal function but not every cardinal function is the result of the mapping of a JJ entity .	12	13	VBZ	is	are
+NN , defence VBZ boat bound for customs she will replace sister ship ocean NNP , whose charter is due to VB that year .	17	18	VBZ	is	are
+the sole source of NN and negative emotions in the NNP world , NNP NNP is the superior of all other NNP .	2	15	VBZ	is	are
+and this discussion really belongs on the village pump proposals page .	2	4	VBZ	belongs	belong
+the route passes back into jefferson county to pass through NNP , then it VBZ the county line into NNP .	1	2	VBZ	passes	pass
+the references need to be VBN using the same style and include all possible information ( author , title , source , publication date , access date , etc .	1	2	VBP	need	needs
+the current rfa nominations lineup is the best in JJ history , bar none .	4	5	VBZ	is	are
+the child protection module , designed in 2010 , provides special training for community management committees ( the 17 member JJ committees established during the NNP to lead development within their communities ) in issues of child protection .	3	9	VBZ	provides	provide
+further NNS are on board NN , NNP navigation device , a NNP attitude receiver and a control moment NN .	1	2	VBP	are	is
+the article also indicates that parties shall `` VB to promote , where appropriate , the establishment and maintenance of formal or informal mechanisms , such as advisory groups , whereby [ their ] NN authorities may receive the views of right holders and other relevant NNS .	1	3	VBZ	indicates	indicate
+one of the aims of his thought is to show that his categories of truth are useful for any type of philosophical NN .	12	15	VBP	are	is
+NNP students receive a free or reduced lunch .	1	2	VBP	receive	receives
+failure to get the annual budget bill approved by the NNP by march 31 ( 3 months after the start of the fiscal year ) also leads automatically to early elections .	0	26	VBZ	leads	lead
+qualities have value for VBG things -- the fact that machines might recognize things without using qualities is beside the point .	0	1	VBP	have	has
+players are paired up , and each pair sits across from each other instead of next to each other .	7	8	VBZ	sits	sit
+the main objective is to work to change or transform his or her followers ' needs and redirect their thinking .	2	3	VBZ	is	are
+the school has 5 certified public school teachers and a title one coordinator .	1	2	VBZ	has	have
+area code CD is a california telephone area code that was split from area code CD on november 14 , 1992 .	1	3	VBZ	is	are
+the mountain looks like black paper .	1	2	VBZ	looks	look
+the union includes workers in NNS , candy , NN , sugar , grain mills , tobacco plants , food processing and manufacturing facilities and other related NNS related to these industries .	1	2	VBZ	includes	include
+note from this viewing angle , the asteroid passes underneath the earth .	0	8	VBZ	passes	pass
+the opening sequence of the film shows a white screen with red chinese credits .	2	6	VBZ	shows	show
+the JJ white flowers form in NNS between the months of april to july .	3	4	VBP	form	forms
+NNP channel 53 , also known as `` el canal del NNP '' ( `` the knowledge channel '' ) , is an educational television station owned and operated by the NNP NNP de NNP león ( NNP ) in NNP , NNP leon .	1	21	VBZ	is	are
+a common way of NN is the replacement of a NN group by a hydrogen atom , resulting in a net loss of one carbon and two hydrogen atoms .	2	5	VBZ	is	are
+the jewish community numbers approximately 600 , 000 , of whom 40 percent are highly JJ , according to press reports .	3	13	VBP	are	is
+his publications deal with issues of NN , JJ philosophy , anthropology , human rights , philosophy of law , theory of international law , international criminal law , united nations reform , theory of democracy , etc .	1	2	VBP	deal	deals
+although winners receive no financial prize , the award attracts considerable media attention which promotes both the winning authors and of course the sponsors of the prize .	8	9	VBZ	attracts	attract
+instead , the top five teams in each conference will qualify for the playoffs and the two conference NNS are entirely separate .	18	19	VBP	are	is
+on NNS the NN includes a new programme , NNP NNP ( give way ) , as well as the existing NN an NNP NNP slot .	3	4	VBZ	includes	include
+the chef works with NNP on NNS , NNP on the main courses and NNP on NNS .	1	2	VBZ	works	work
+the JJ areas are in the west of the canton , whereas the JJ areas are in the east .	14	15	VBP	are	is
+special tax NNS are also VBN for industrial projects to complement planning for investment described above .	2	3	VBP	are	is
+NNP programs recognize that for some individuals controlled use is a more realistic possibility .	1	2	VBP	recognize	recognizes
+the earliest part of the house dates back to the 17th century , whilst the main body was added in the 18th century and the top of the house was built in the 20th century .	2	6	VBZ	dates	date
+the NNP news journal articles are of course the most commonly cited because they have the most detail .	4	5	VBP	are	is
+a system is JJ if the number of equations is lower than the number of the variables .	6	9	VBZ	is	are
+the ideal NN question is one where the NN says , `` UH !	3	4	VBZ	is	are
+this is because the NN function is not both JJ and onto .	5	6	VBZ	is	are
+JJ NNS appear on the NN , with many of the same characteristics consistently found on other JJ NNP samples .	1	2	VBP	appear	appears
+the political concern derives from the fact that none of the historians from this periods works exclusively in the JJ fields , and had steady political works at the same time .	2	3	VBZ	derives	derive
+JJ NN NNP says that the membership numbers reported by la NNP del NNP are JJ given the great interest it has generated among `` religious authorities '' and the following it receives in mexico .	7	14	VBP	are	is
+information introduced from the island article is probably not of ga quality and some of it is still unsourced ( although many of it was brought up to a good quality ) .	0	6	VBZ	is	are
+conventional NNS can not measure the temperature of an object which is smaller than a NN , and new methods and materials have to be used .	19	22	VBP	have	has
+neighboring districts are ( from the southeast NN ) NNP bo , NNP NNP and NNP of NNP NNP province .	1	2	VBP	are	is
+the train then travels back up a hill into a JJ brake run .	1	3	VBZ	travels	travel
+for a time under british rail direct trains ran to london waterloo , now passengers have to change at NNP to reach london NNP .	14	15	VBP	have	has
+a second air attack takes place as fire NNS , police and NNS from NNP try to help the victims .	3	4	VBZ	takes	take
+the estimated losses include civilians killed in battle during the flight and evacuation in the final months of the war as well as direct JJ actions of violent soldiers , NNS and NN NNS by JJ NNS and individuals in the immediate aftermath of the war .	2	3	VBP	include	includes
+if not blocked , this user needs serious NN .	5	6	VBZ	needs	need
+the film is in JJ NNS format with an audio track in english and NNS in english , spanish , and french .	1	2	VBZ	is	are
+this section only mentions JJ theories the JJS bit , and then only as a NN for NNP .	1	3	VBZ	mentions	mention
+the remaining cartoons will be added to the digital collection as funds become available .	11	12	VBP	become	becomes
+license on NNP VBZ no NN and no commercial use .	0	3	VBZ	specifies	specify
+look , there is no way that creating this mechanism in itself changes any policy .	0	3	VBZ	is	are
+NNP describes this important turning point in a 1999 lead article in the american journal of sociology while global income NN is massive , it has remained relatively steady or declined somewhat in recent years due to rapid income growth in china and india .	20	21	VBZ	is	are
+only NNS have high and short body .	1	2	VBP	have	has
+just because an idea is true does n't mean it can be proved .	3	4	VBZ	is	are
+one argument is that squares are such a simple , JJ JJ shape that the brain automatically looks for them , mentally completing this NN whether it is made explicit or not .	4	5	VBP	are	is
+a system VBG on security through NN may have actual security NNS , but its owners or designers deliberately make the system more complex in the hope that NNS are unable to find a NN .	15	19	VBP	make	makes
+any source that fails to do this is useless to both wikipedia and to the article .	1	7	VBZ	is	are
+their JJ review VBZ that `` it is a work of genius , a ready made rock classic and arguably the last word in rock operas .	2	3	VBZ	declares	declare
+the rate of sinking and VBG in speed , determines whether the area VBD is surface , mid or deep water .	1	9	VBZ	determines	determine
+the gross structure of line NN is the line NN predicted by JJ electrons with no spin .	2	6	VBZ	is	are
+given that all the discussion on the page to date ( most of which is your NN ) has n't managed to `` persuade enough people '' and has resulted in personal attacks and incivility ( from all sides ) , .	4	14	VBZ	is	are
+north of us 1 , JJ enters brunswick county just before the highway crosses the NNP river .	12	13	VBZ	crosses	cross
+the site gets 37 thousand google hits ( the vast majority from finnish websites ) and has been VBN in finnish print newspapers .	1	2	VBZ	gets	get
+that power is only limited by the constitution , or any subordinate law ( such as a state constitution ) .	1	2	VBZ	is	are
+this article is a memorial to those coalition soldiers killed in iraq , 2006 .	1	2	VBZ	is	are
+JJR offers produce , meat , fish , bulk foods and coffee , JJ foods , natural bath and body care items , NNS and NNS and , in some locations , beer and wine .	1	2	VBP	produce	produces
+an information counter provides local information regarding not only tourist attractions in NNP and NNP head but most other coastal areas of georgia and southern south carolina .	2	3	VBZ	provides	provide
+a recall would not VB consist of a vote , but people have to provide points and discussion , making it a community decision , no JJ behavior can hide the truth of NN and actions .	11	12	VBP	have	has
+the NNP forever line includes JJ products for the face , body , and products created specifically for men .	3	4	VBZ	includes	include
+the JJ chart shows the position of the NN at the moment of birth .	2	3	VBZ	shows	show
+these mode NNS are more JJ than other game genres because they reflect actual sports .	2	3	VBP	are	is
+the task is JJ with NNS for speed .	1	2	VBZ	is	are
+the article contains a JJ photo of her taken at age 5 .	1	2	VBZ	contains	contain
+if a page is completely patent nonsense throughout its history , then it can be deleted under criteria for speedy deletion NNP .	2	3	VBZ	is	are
+at the most basic level , the system works by sending spread spectrum signals down a NN and waiting for those signals to be reflected back to the NNP system .	7	8	VBZ	works	work
+NNP , international NNP alphabet , NNP chart for english dialects and there is an article on that , and further resources elsewhere .	7	13	VBZ	is	are
+i feel that an admin needs to be able to see through such NN .	4	5	VBZ	needs	need
+the population of NNP NNP is about 1000 .	1	5	VBZ	is	are
+one ally of the activist wing claimed that thousands of NNP members are also league of the south members .	8	12	VBP	are	is
+NNP activities consist of joint exercises , port visits , JJ practical courses , professional training and community outreach with the coastal nations of africa .	1	2	VBP	consist	consists
+he developed his own JJ style of commentary and his accent is RB that of a native irish speaker .	10	11	VBZ	is	are
+when a ball hits an enemy , it will continue moving in the same direction , VBG walls , and pushing the player backwards slightly .	2	3	VBZ	hits	hit
+the results of the JJ afds clearly show consensus that the site is notable , and the claim to notability is clearly stated .	11	12	VBZ	is	are
+nevertheless , eu companies have significant problems VBG and operating in the south korean market due to JJ standards and testing requirements for products and services often creating NNS to trade .	3	4	VBP	have	has
+its headquarters are in the town of NNP in the west of the area on the NNP highway at .	1	2	VBP	are	is
+the subject deserves a NN article .	1	2	VBZ	deserves	deserve
+the JJ depth of the reservoir is .	2	6	VBZ	is	are
+delete the page is obviously guilty of being non-notable .	2	3	VBZ	is	are
+the case throws NNP into the JJ world of former nazis hired by the u .	1	2	VBZ	throws	throw
+this controlled injection helps reduce the sharp NN POS ' .	2	3	VBZ	helps	help
+the problem with the schools policy is the way in which it promotes this kind of NN .	1	6	VBZ	is	are
+however , no one is willing to VB him , so they RB take him along .	3	4	VBZ	is	are
+kelly , no the block might not have been the best way to go about it , but it worked , was minimal ( as far as blocks go ) , and does not damage your reputation .	27	28	VBP	go	goes
+new features include the ability to import and export custom attractions , design custom NNS and NNS , as well as design an JJ NN and a fully three JJ world players can view from all angles .	1	2	VBP	include	includes
+the only other option is to use passing trucks for transportation .	3	4	VBZ	is	are
+the players sit on the NNS , ensuring that members of each group are RB distributed around the circle .	1	2	VBP	sit	sits
+NNP 's engagement at the iron gates is one of hungary 's more celebrated victories , NNP 's NN of infantry , cavalry and war NNS performed RB to the NN of the turkish commander NNP , who was VBN by the NN of the NNP army .	2	7	VBZ	is	are
+her awards and honors include a 2003 NNP ( national NNP for the arts ) fellowship and a NNP NNP writer 's award .	1	4	VBP	include	includes
+the collectors ' editions feature a NN book showing the NN for the episode .	3	4	VBP	feature	features
+her awards include JJ first prize winner of the NNP society competition , and grand prize in the NNP scholarship competition .	1	2	VBP	include	includes
+the problem is that this list of characters is not notable except in an in world context .	5	8	VBZ	is	are
+when an apprentice jockey finishes his NN and becomes a `` fully VBN jockey '' , the nature of their employment and insurance requirements change because they are regarded as `` NN '' , like NNS .	3	4	VBZ	finishes	finish
+the song ends with an assertion that `` you ca n't be forever blessed '' before the lyrics return to the idea of work , NN , and resignation .	1	2	VBZ	ends	end
+local people in NNP usually travel to the town of mount holly for NNS such as gas , food , and NNS .	1	5	VBP	travel	travels
+so if function 1 sends data to function 2 , the data elements would be placed in the box to the right of function 1 .	2	4	VBZ	sends	send
+also the list should likely spell out why reliable sources think these names are unusual as we write for a variety of readers who may not understand what is considered NN .	12	13	VBP	are	is
+his daughter , NNP , grows up in this environment and eventually VBZ a new green house , where NNP plays his music .	1	5	VBZ	grows	grow
+the fact remains that this JJ bond is a RB JJ job .	1	2	VBZ	remains	remain
+the film has 7 original songs , the soundtrack was released in 1999 .	1	2	VBZ	has	have
+the name `` NNP '' derives from the name given by the NNP people , who still live on cape NNP island ( but not in NNP ) .	1	5	VBZ	derives	derive
+a JJ common room with JJ NNS and internet access , known as the NN , provides a comfortable place for our students to study and VB between classes .	3	16	VBZ	provides	provide
+these databases often include other NN data such as NNP and mass NN .	1	3	VBP	include	includes
+this website contains a complete database of uniform designs for every major league team in every season .	1	2	VBZ	contains	contain
+the party is one of the NNS of the christian democratic appeal .	1	2	VBZ	is	are
+if this is the same teenager from before , about 20 years RB do it .	11	13	VBP	do	does
+the dealer deals out all the cards to all players , as RB as possible .	1	2	VBZ	deals	deal
+the information is highly valuable for the [ [ india and state terrorism ] ] article .	1	2	VBZ	is	are
+the nature of NNP and NNP NNP is to VB with their sister IN eating and destroying rice crop , which is why both are the considered as the NNS of NNS .	1	7	VBZ	is	are
+i think the nhl project needs a NN and needs to consider the history of the franchise , not individual instances of it .	4	5	VBZ	needs	need
+it means that the root causes of the problems in the NNP topic area are unrelated to civility and therefore VBG civility will not resolve the problems in the topic area .	5	14	VBP	are	is
+according to the NNP , the us healthcare industry VBZ over 8 .	8	9	VBZ	generates	generate
+according to google scholar that article , published in 1967 , has a VBG total of 6 citations , none from JJ sources .	5	11	VBZ	has	have
+finite element means that NNP is bounded for all n .	1	2	VBZ	means	mean
+the article title in question is extremely pov and JJ in nature .	2	5	VBZ	is	are
+their story VBZ heavily around tracking down and protecting seven NNPS ; magical pieces of NN capable of generating JJ power when assembled from a mysterious man known only as black NNP and his NNS .	1	2	VBZ	revolves	revolve
+there , most of the dialogue between the two consists of NNP trying to explain to o'brien that his character is JJ in the show .	19	20	VBZ	is	are
+the family contains 6 genera , and CD species .	1	2	VBZ	contains	contain
+so , it is not automatic that a current candidate is sufficiently notable .	9	10	VBZ	is	are
+north bound trains usually continue beyond NNP to chester and NNP where as south bound trains usually continue to either cardiff or birmingham .	2	4	VBP	continue	continues
+he VBZ the hotel room to VB , and when NNP 's NNS enter the room , it VBZ , breaking the entire room off into the ocean .	12	13	VBP	enter	enters
+the royal NNP fish processing plant at the port is the largest within NNP and is amongst the most modern JJ factories in the world .	5	9	VBZ	is	are
+the gmina covers an area of , and as of 2006 its total population is 4 , CD .	13	14	VBZ	is	are
+the orchestra and the choir often perform at st david 's hall in cardiff and at other venues throughout wales .	4	6	VBP	perform	performs
+most obviously , the idea that two NNS could carry a NN all the way to NNP square during a large celebration seems highly JJ .	4	22	VBZ	seems	seem
+the physical heart is visible ; the JJ heart is JJ and its emotions are JJ ; the spiritual heart is invisible .	19	20	VBZ	is	are
+certainly , discussion is welcome in the course of achieving ( or attempting to achieve ) consensus on the matter .	2	3	VBZ	is	are
+the main variants of NNP are a JJ woodland pattern , and desert patterns in two , three or four colours .	2	5	VBP	are	is
+NNP 's economy is predominantly a service sector NN 2001 , 34 .	2	3	VBZ	is	are
+the members are NNP ( noah NNP ) and NNP ( eric NNP ) .	1	2	VBP	are	is
+in the news seems to quite clearly state that the article needs to have some sort of major update in order to qualify for NNP .	10	11	VBZ	needs	need
+mainstream NNS believe that economic NNS can be largely VBN by increasing money supply during economic NNS .	1	2	VBP	believe	believes
+however , as soviet sources about the events are JJ , the topic has not been RB VBN .	4	8	VBP	are	is
+not nitrogen -- most active metals VBP with it and some even have specific warning labels about not using nitrogen atmosphere .	5	6	VBP	react	reacts
+pov warriors who decide that what the project really needs is for someone to come along and JJ all articles of interest to them from their own pov , which they believe is the `` truth '' .	7	9	VBZ	needs	need
+the top ones are almost certainly serial ports .	2	3	VBP	are	is
+in JJ NNP landscape , ( 1979 ) and NNP landscape after NNP , ( 1980 ) , the landscape contains a steel NN which frames a detail from the same scene .	19	20	VBZ	contains	contain
+regarding the length of the cycle , three significant scholarly studies devoted to the jubilee and NNP years agree that it was 49 years , while VBG somewhat on the interpretation of the other issues involved .	10	18	VBP	agree	agrees
+the route continues into the london boundary of middlesex centre at .	1	2	VBZ	continues	continue
+other lakes VBN to contain the NN are NNP NNP , NNP NNP , NNP mask and NNP NNP .	1	7	VBP	are	is
+the NN shell is also a deep part of hindu symbolic and religious tradition .	2	3	VBZ	is	are
+alternative NNS of this last name include NNP ( NN ) and NNP ( NN ) .	1	6	VBP	include	includes
+NNS are able sign players after the NNP auction , as replacement of contracted players who are not available to play due to injuries and national NNS .	0	1	VBP	are	is
+in NN studies , repeated NN treatment produces JJ behavioral NN ( or reverse tolerance ) to some of the drug 's effects .	6	7	VBZ	produces	produce
+common aesthetic design principles include NN , edge NN , NN , flow , NN , NN , color , NN , the interaction of NN and shadows , NN , and harmony .	3	4	VBP	include	includes
+because its bill is short , it VBZ at small flowers , including those in the genera NNP , NNP , NNP , NNP , NNP , NNP and NNP .	2	3	VBZ	is	are
+while , consumption of new food items is inclined by the availability of native ingredients , convenience and cost , therefore an immediate change is likely to occur .	23	24	VBZ	is	are
+the novel is a NN of the hindu epic NNP told from NNP 's ( NNP 's ) viewpoint .	1	2	VBZ	is	are
+many of his NNS are physical , claiming that the poems represent JJ forces ; or ethical , that they contain VBG VBD messages .	10	11	VBP	represent	represents
+i think the article is in good shape , but it still needs more work to get to fa status .	3	4	VBZ	is	are
+the main hills are NNP , located 7 .	2	3	VBP	are	is
+the story involves NNP , whose father , a colonel in the us army , is VBG experiments being performed with NNP .	1	2	VBZ	involves	involve
+luis NNP 's father , NNP ( NNP NNP ) is a man running a secret NN business in the city .	3	10	VBZ	is	are
+article 17 of the treaty on european union , as amended by the treaty of lisbon , VBZ out the procedure for VBG the president and his team .	0	17	VBZ	lays	lay
+this account 's only edits are to almost entirely to my talk page VBG the addition of a trivia tag to paris NNP .	4	5	VBP	are	is
+the article feels a little bit JJ at the moment .	1	2	VBZ	feels	feel
+where reasonable doubt exists , discussion using another method under the deletion policy should occur instead .	2	3	VBZ	exists	exist
+a common application of NNP is the study of patterns of gene expression .	2	5	VBZ	is	are
+at least some of these reverts are reasonable , the latest user 's comment ends with `` maybe lucky should go get a life .	13	14	VBZ	ends	end
+they stop at a JJ NN , where NNP tries calling home , but fails because he believes his phone number is JJ .	20	21	VBZ	is	are
+the structure has three floors and has well preserved NNS and images of the JJ century .	1	2	VBZ	has	have
+even with oil market NNS , prices for gasoline in the united states are among the lowest in the JJ world ; this is principally due to lower taxes .	6	13	VBP	are	is
+JJ cancer is any type of cancer that forms in the NNS of the NN .	1	2	VBZ	is	are
+the patient eventually loses his hearing .	1	3	VBZ	loses	lose
+its stations carry the letter h followed by a number .	1	2	VBP	carry	carries
+perhaps we should explain to the user why the pictures are unnecessary .	9	10	VBP	are	is
+fringe JJ candidates who might not have a shot have their say .	2	9	VBP	have	has
+the movement ends without a NN .	1	2	VBZ	ends	end
+the NNP code is CD , and the community is inside area code CD .	8	9	VBZ	is	are
+this category comprises user templates related to kosovo .	1	2	VBZ	comprises	comprise
+my reason is always the same - wikipedia lists require explicit definitions , and none of these pages have one .	8	9	VBP	require	requires
+being NN is an important NN job .	1	2	VBZ	is	are
+the most notable current players are former australian bowler doug NNP and nsw players grant lambert and ben NNP .	4	5	VBP	are	is
+they are also interested in how the contest participants develop the solution .	8	9	VBP	develop	develops
+the sunday times noted , `` the colleges are JJ communities within the university and enjoy a healthy rivalry .	7	8	VBP	are	is
+once a debate gets to this point ( i .	2	3	VBZ	gets	get
+NN in his works halfway between spy stories and science fiction ; on another side , annie NNP 's NN plate ( `` flat writing '' ) tries to VB the distance between reality and its NN .	20	27	VBZ	tries	try
+the version of `` my hotel year '' that appears on this ep is the electric version and contains an extra verse at the end .	1	13	VBZ	is	are
+some scholars feel that under the liberal divorce policy of NNP men had been VBG woman and then RB VBG them after they lost interest , deeply VBG the women .	1	2	VBP	feel	feels
+the NNP trunk road taking traffic along the south coast between NNP and southampton passes to the south of the town .	3	14	VBZ	passes	pass
+but you already knew this fact that administrators also agree with me , yet you are hell bent on VBG otherwise .	7	9	VBP	agree	agrees
+the fruit is a black NN , eaten by a variety of NN birds .	1	2	VBZ	is	are
+in the episode `` unexpected '' , NNP visits isaac , but the painter tells her that he thinks peter might have left new york ( though he is in fact aware that he is still somewhere in the city ) .	13	14	VBZ	tells	tell
+however the article on NNP includes many of the controversial instances they have faced .	2	5	VBZ	includes	include
+her duties , authority and method of election are similar to those of an NN .	1	8	VBP	are	is
+the article provides no sources with which to verify any of the information or claims , and i see no valid rationale for keeping this article .	1	2	VBZ	provides	provide
+the chart is obviously for draft editing purposes ( VB down the article to see it ) .	1	2	VBZ	is	are
+JJ trips to NNP square provide 10 minute NNS to that town during JJ peak hours , and 30 minute service levels on NNS and NNS .	1	5	VBP	provide	provides
+weak keep the article quality needs to be cleaned up , and reliable sources added , but i VBP toward keeping it if it can be fixed up .	4	5	VBZ	needs	need
+the northern terminus is at the maryland state line in NNP ford , where the route continues into cumberland as maryland route 61 upon crossing the north branch of the NNP river .	15	16	VBZ	continues	continue
+his awards include an oscar for all that jazz in 1980 and an emmy for the acclaimed 1985 tv version of death of a NNP .	1	2	VBP	include	includes
+the first person to travel to america from krishna district , NNP NNP mohammed is also from NNP , who served as the first secretary and later NN at the indian embassy in washington for 30 years from 1949 to 1979 .	2	14	VBZ	is	are
+a wind causes the screenplay to fall to the road below , and the two pick it up and decide to use NNP 's ideas themselves .	1	2	VBZ	causes	cause
+keep , this page also exists on my wiki and NNP is not a small company .	3	5	VBZ	exists	exist
+the school colours are grey and green , and the sports teams compete under the name of patriots .	2	3	VBP	are	is
+the white sea fossils and the surrounding NNS also show that NNP lived on the surface of the JJ .
