@@ -1,0 +1,1 @@
+learning rate     :0.7  back_steps     :5  hidden units     :25  loss     :4.95819193072442

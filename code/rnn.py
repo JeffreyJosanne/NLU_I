@@ -183,7 +183,7 @@ class RNN(object):
 			self.deltaU += np.outer(delta_in, s[t-1])
 
 			for t2 in reversed(range(max(t - steps,0), t)):
-				temp_sigmoid_grad = s[t2-1] * (1-s[t2-1])
+				temp_sigmoid_grad = s[t2] * (1-s[t2])
 				delta_in = np.dot(self.U.T, delta_in) * temp_sigmoid_grad
 				temp_one_hot = make_onehot(x[t2], self.vocab_size)
 				self.deltaV += np.outer(delta_in, temp_one_hot)
@@ -661,9 +661,9 @@ if __name__ == "__main__":
 		##########################
 		# --- your code here --- #
 		##########################
-		learning_rate = [0.7,0.5,0.3,0.1,0.07,0.05,0.03,0.01]
-		back_steps = [0,1,2,3,4,5]
-		hidden_units = [25, 50, 75, 100, 200, 400, 600, 800, 1000, 1200]
+		learning_rate = [0.7]
+		back_steps = [5]
+		hidden_units = [25]
 		grid = np.zeros((len(learning_rate), len(back_steps), len(hidden_units)))
 		for lr in range(len(learning_rate)):
 			for bs in range(len(back_steps)):
@@ -675,7 +675,7 @@ if __name__ == "__main__":
 					print(lr)
 					print(bs)
 					print(hu)
-					output_file = open('output_file.txt','a')
+					output_file = open('output_file_best.txt','a')
 					output_file.write('learning rate     :'+ str(learning_rate[lr])+'  back_steps     :'+str(back_steps[bs])+'  hidden units     :'+str(hidden_units[hu])+'  loss     :'+str(loss))
 					output_file.close()
 		print('optimal indices:')
