@@ -83,10 +83,10 @@ class RNN(object):
 		s = np.zeros((len(x) + 1, self.hidden_dims))
 		y = np.zeros((len(x), self.out_vocab_size))
 		x = x.reshape(x.shape[0],1)
-		print(x.shape)
-		print(s.shape)
-		print(self.U.shape)
-		print(self.V.shape)
+		# print(x.shape)
+		# print(s.shape)
+		# print(self.U.shape)
+		# print(self.V.shape)
 		for t in range(len(x)):
 			##########################
 			# --- your code here --- #
@@ -147,6 +147,8 @@ class RNN(object):
 		##########################
 		# --- your code here --- #
 		##########################
+		# print(d)
+		# print(d[0])
 		I = np.ones((1,len(x)))
 		t = (len(x)) - 1
 		target = make_onehot(d,self.vocab_size)
@@ -231,7 +233,7 @@ class RNN(object):
 		# --- your code here --- #
 		##########################
 		target = make_onehot(d,self.vocab_size)
-		delta_out = (target-y[t])
+		delta_out = (target-y[-1])
 		# * I # Which is basically nothing
 		sigmoid_grad = s[t] * (1-s[t])
 		affine = np.dot(self.W.T, delta_out)
@@ -330,7 +332,10 @@ class RNN(object):
 		# --- your code here --- #
 		##########################
 		y, s = self.predict(x)
-		if (y(d[0]) > y(d[1])):
+		# target_y, target_s = self.predict(d)
+		# print(y[d[0]])
+		# print(y[d[1]])
+		if (y[-1][d[0]] > y[-1][d[1]]):
 			return 1
 		return 0
 
