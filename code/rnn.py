@@ -147,6 +147,18 @@ class RNN(object):
 		##########################
 		# --- your code here --- #
 		##########################
+		I = np.ones((1,len(x)))
+		t = (len(x)) - 1
+		target = make_onehot(d,self.vocab_size)
+		delta_out = (target-y[t])
+		# * I # Which is basically nothing
+		self.deltaW += np.outer(delta_out, s[t])
+		sigmoid_grad = s[t] * (1-s[t])
+		affine = np.dot(self.W.T, delta_out)
+		delta_in = affine * sigmoid_grad
+		x_in_onehot = make_onehot(x[t], self.vocab_size)
+		self.deltaV += np.outer(delta_in, x_in_onehot)
+		self.deltaU += np.outer(delta_in, s[t-1])
 
 
 	def acc_deltas_bptt(self, x, d, y, s, steps):
@@ -212,6 +224,28 @@ class RNN(object):
 		##########################
 		# --- your code here --- #
 		##########################
+		I = np.ones((1,len(x)))
+		t = len(x) - 1
+		# print("time {0}".format(t))
+		##########################
+		# --- your code here --- #
+		##########################
+		target = make_onehot(d,self.vocab_size)
+		delta_out = (target-y[t])
+		# * I # Which is basically nothing
+		sigmoid_grad = s[t] * (1-s[t])
+		affine = np.dot(self.W.T, delta_out)
+		delta_in = affine * sigmoid_grad
+		self.deltaW += np.outer(delta_out, s[t])
+		self.deltaV += np.outer(delta_in, make_onehot(x[t], len(y[t])))
+		self.deltaU += np.outer(delta_in, s[t-1])
+
+		for t2 in reversed(range(max(t - steps,0), t)):
+			temp_sigmoid_grad = s[t2] * (1-s[t2])
+			delta_in = np.dot(self.U.T, delta_in) * temp_sigmoid_grad
+			temp_one_hot = make_onehot(x[t2], self.vocab_size)
+			self.deltaV += np.outer(delta_in, temp_one_hot)
+			self.deltaU += np.outer(delta_in, s[t2-1])
 
 
 	def compute_loss(self, x, d):
@@ -250,9 +284,10 @@ class RNN(object):
 		'''
 
 		loss = 0.
-
 		##########################
-		# --- your code here --- #
+		y, s = self.predict(x)
+		t = len(x) - 1
+		loss -= np.log(y[t, d])
 		##########################
 
 		return loss
@@ -273,7 +308,10 @@ class RNN(object):
 		##########################
 		# --- your code here --- #
 		##########################
-
+		y, s = self.predict(x)
+		t = len(x) - 1
+		if (np.argmax(y[t]) == d[0]):
+			return 1
 		return 0
 
 
@@ -291,7 +329,9 @@ class RNN(object):
 		##########################
 		# --- your code here --- #
 		##########################
-
+		y, s = self.predict(x)
+		if (y(d[0]) > y(d[1])):
+			return 1
 		return 0
 
 
@@ -664,20 +704,22 @@ if __name__ == "__main__":
 		learning_rate = [0.7]
 		back_steps = [5]
 		hidden_units = [25]
+		batch_size = [10, 25, 50, 75, 100, 150, 200]
 		grid = np.zeros((len(learning_rate), len(back_steps), len(hidden_units)))
 		for lr in range(len(learning_rate)):
 			for bs in range(len(back_steps)):
 				for hu in range(len(hidden_units)):
-					model = RNN(vocab_size, hidden_units[hu], vocab_size)
-					loss = model.train(X_train, D_train, X_dev, D_dev, epochs=10, learning_rate=learning_rate[lr],anneal=5, back_steps=back_steps[bs], batch_size=100, min_change=0.0001, log=True)
-					grid[lr][bs][hu] = loss
-					print(loss)
-					print(lr)
-					print(bs)
-					print(hu)
-					output_file = open('output_file_best.txt','a')
-					output_file.write('learning rate     :'+ str(learning_rate[lr])+'  back_steps     :'+str(back_steps[bs])+'  hidden units     :'+str(hidden_units[hu])+'  loss     :'+str(loss))
-					output_file.close()
+					for bat_size in range(len(batch_size)):
+						model = RNN(vocab_size, hidden_units[hu], vocab_size)
+						loss = model.train(X_train, D_train, X_dev, D_dev, epochs=10, learning_rate=learning_rate[lr],anneal=5, back_steps=back_steps[bs], batch_size=batch_size[bat_size], min_change=0.0001, log=True)
+						grid[lr][bs][hu] = loss
+						print(loss)
+						print(lr)
+						print(bs)
+						print(hu)
+						output_file = open('output_file_best.txt','a')
+						output_file.write('Batch size     :'+ str(batch_size[bat_size])+ 'learning rate     :'+ str(learning_rate[lr])+'  back_steps     :'+str(back_steps[bs])+'  hidden units     :'+str(hidden_units[hu])+'  loss     :'+str(loss))
+						output_file.close()
 		print('optimal indices:')
 		print(np.argmax(grid))
 	if mode == "train":
