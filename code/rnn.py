@@ -232,7 +232,7 @@ class RNN(object):
 		##########################
 		# --- your code here --- #
 		##########################
-		target = make_onehot(d,self.vocab_size)
+		target = make_onehot(d[0],self.vocab_size)
 		delta_out = (target-y[-1])
 		# * I # Which is basically nothing
 		sigmoid_grad = s[t] * (1-s[t])
@@ -289,7 +289,7 @@ class RNN(object):
 		##########################
 		y, s = self.predict(x)
 		t = len(x) - 1
-		loss -= np.log(y[t, d])
+		loss -= np.log(y[t, d[0]])
 		##########################
 
 		return loss
@@ -819,6 +819,25 @@ if __name__ == "__main__":
 
 		##########################
 		# --- your code here --- #
+		learning_rate = [0.7]
+		back_steps = [5]
+		hidden_units = [25]
+		batch_size = [10]
+		grid = np.zeros((len(learning_rate), len(back_steps), len(hidden_units)))
+		for lr in range(len(learning_rate)):
+			for bs in range(len(back_steps)):
+				for hu in range(len(hidden_units)):
+					for bat_size in range(len(batch_size)):
+						model = RNN(vocab_size, hidden_units[hu], vocab_size)
+						loss = model.train_np(X_train, D_train, X_dev, D_dev, epochs=10, learning_rate=learning_rate[lr],anneal=5, back_steps=back_steps[bs], batch_size=batch_size[bat_size], min_change=0.0001, log=True)
+						grid[lr][bs][hu] = loss
+						print(loss)
+						print(lr)
+						print(bs)
+						print(hu)
+						output_file = open('output_file_np.txt','a')
+						output_file.write('Batch size     :'+ str(batch_size[bat_size])+ 'learning rate     :'+ str(learning_rate[lr])+'  back_steps     :'+str(back_steps[bs])+'  hidden units     :'+str(hidden_units[hu])+'  loss     :'+str(loss))
+						output_file.close()
 		##########################
 
 		acc = 0.
