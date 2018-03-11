@@ -706,10 +706,14 @@ if __name__ == "__main__":
 		##########################
 		# --- your code here --- #
 		##########################
+		# learning_rate = [0.9, 0.7,0.5,0.3,0.1,0.07,0.05,0.03,0.01]
 		learning_rate = [0.7]
+		# back_steps = [0,1,2,3,4,5]
 		back_steps = [5]
-		hidden_units = [25]
-		batch_size = [10, 25, 50, 75, 100, 150, 200]
+		# hidden_units = [25, 50, 75, 100, 200, 400, 500]
+		hidden_units = [50]
+		# batch_size = [1, 10, 50]
+		batch_size = [10]
 		grid = np.zeros((len(learning_rate), len(back_steps), len(hidden_units)))
 		for lr in range(len(learning_rate)):
 			for bs in range(len(back_steps)):
@@ -774,6 +778,15 @@ if __name__ == "__main__":
 		np.save("rnn.U.npy", model_final.U)
 		np.save("rnn.V.npy", model_final.V)
 		np.save("rnn.W.npy", model_final.W)
+		run_loss = model_final.compute_mean_loss(X_dev, D_dev)
+		adjusted_loss = adjust_loss(run_loss, fraction_lost, q, mode='basic')
+		adjusted_loss_some = adjust_loss(run_loss, fraction_lost, q, mode='something')
+		output_file = open('output_2b.txt','a')
+		output_file.write('loss     :'+str(run_loss))
+		output_file.write('adjusted loss     :'+str(adjusted_loss))
+		output_file.write('adjusted loss     :'+str(adjusted_loss_some))
+		output_file.close()
+
 
 		run_loss = -1
 	adjusted_loss = -1
@@ -819,9 +832,13 @@ if __name__ == "__main__":
 
 		##########################
 		# --- your code here --- #
-		learning_rate = [0.7]
-		back_steps = [5]
-		hidden_units = [25]
+		learning_rate = [0.9, 0.7,0.5,0.3,0.1,0.07,0.05,0.03,0.01]
+		# learning_rate = [0.7]
+		# back_steps = [0,1,2,3,4,5]
+		back_steps  = [5]
+		# hidden_units = [25, 50, 75, 100, 200, 400, 500]
+		hidden_units = [50]
+		# batch_size = [1, 10, 50]
 		batch_size = [10]
 		grid = np.zeros((len(learning_rate), len(back_steps), len(hidden_units)))
 		for lr in range(len(learning_rate)):
@@ -835,8 +852,9 @@ if __name__ == "__main__":
 						print(lr)
 						print(bs)
 						print(hu)
-						output_file = open('output_file_np.txt','a')
-						output_file.write('Batch size     :'+ str(batch_size[bat_size])+ 'learning rate     :'+ str(learning_rate[lr])+'  back_steps     :'+str(back_steps[bs])+'  hidden units     :'+str(hidden_units[hu])+'  loss     :'+str(loss))
+						print()
+						output_file = open('output_file_np_grad.txt','a')
+						output_file.write('Batch size     :'+ str(batch_size[bat_size])+ '	learning rate     :'+ str(learning_rate[lr])+'	back_steps     :'+str(back_steps[bs])+'	hidden units     :'+str(hidden_units[hu])+'	loss     :'+str(loss))
 						output_file.close()
 		##########################
 
