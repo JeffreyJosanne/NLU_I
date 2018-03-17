@@ -1,0 +1,34 @@
+(nlu) [adorni]s1322332: python code/rnn.py train-lm data 25 0 0.5
+Retained 2000 words from 9954 (88.81% of all tokens)
+
+
+Training model for 10 epochs
+training set: 25000 sentences (batch size 100)
+Optimizing loss on 1000 sentences
+Vocab size: 2000
+Hidden units: 25
+Steps for back propagation: 5
+Initial learning rate set to 0.7, annealing set to 5
+
+calculating initial mean loss on dev set: 7.798662515757492
+
+epoch 1, learning rate 0.7000	instance 25000	epoch done in 587.96 seconds	new loss: 4.794643190964523
+epoch 2, learning rate 0.5833	instance 25000	epoch done in 585.72 seconds	new loss: 4.747037984076491
+epoch 3, learning rate 0.5000	instance 25000	epoch done in 583.97 seconds	new loss: 4.680624466763799
+epoch 4, learning rate 0.4375	instance 25000	epoch done in 582.64 seconds	new loss: 4.594560082877406
+epoch 5, learning rate 0.3889	instance 25000	epoch done in 567.90 seconds	new loss: 4.589576639013088
+epoch 6, learning rate 0.3500	instance 25000	epoch done in 565.39 seconds	new loss: 4.521103600899287
+epoch 7, learning rate 0.3182	instance 25000	epoch done in 570.66 seconds	new loss: 4.497105692126271
+epoch 8, learning rate 0.2917	instance 25000	epoch done in 570.57 seconds	new loss: 4.498424414028361
+epoch 9, learning rate 0.2692	instance 25000	epoch done in 565.32 seconds	new loss: 4.469117808671116
+epoch 10, learning rate 0.2500	instance 25000	epoch done in 572.55 seconds	new loss: 4.459559667087007
+
+training finished after reaching maximum of 10 epochs
+best observed loss was 4.459559667087007, at epoch 10
+setting U, V, W to matrices from best epoch
+4.459559667087007
+0
+0
+0
+optimal indices:
+0

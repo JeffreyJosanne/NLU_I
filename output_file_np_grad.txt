@@ -1,19 +1,72 @@
-Batch size     :1	learning rate     :0.7	back_steps     :5	hidden units     :50	loss     :0.5040712725599378
-Batch size     :10	learning rate     :0.7	back_steps     :5	hidden units     :50	loss     :0.49584600752935326
-Batch size     :50	learning rate     :0.7	back_steps     :5	hidden units     :50	loss     :0.5740088496756063
-Batch size     :10	learning rate     :0.7	back_steps     :5	hidden units     :25	loss     :0.4901086871154952
-Batch size     :10	learning rate     :0.7	back_steps     :5	hidden units     :50	loss     :0.5045156174714347
-Batch size     :10	learning rate     :0.7	back_steps     :5	hidden units     :75	loss     :0.5184019657936723
-Batch size     :10	learning rate     :0.7	back_steps     :5	hidden units     :100	loss     :0.5040458324378879
-Batch size     :10	learning rate     :0.7	back_steps     :5	hidden units     :200	loss     :0.5282936284136315
-Batch size     :10	learning rate     :0.7	back_steps     :5	hidden units     :400	loss     :0.5666095092487471
-Batch size     :10	learning rate     :0.7	back_steps     :5	hidden units     :500	loss     :0.5448561200503371
-Batch size     :10	learning rate     :0.9	back_steps     :5	hidden units     :50	loss     :0.4890551766991129
-Batch size     :10	learning rate     :0.7	back_steps     :5	hidden units     :50	loss     :0.49584600752935326
-Batch size     :10	learning rate     :0.5	back_steps     :5	hidden units     :50	loss     :0.5302494004024298
-Batch size     :10	learning rate     :0.3	back_steps     :5	hidden units     :50	loss     :0.5288240405790127
-Batch size     :10	learning rate     :0.1	back_steps     :5	hidden units     :50	loss     :0.5735762689762963
-Batch size     :10	learning rate     :0.07	back_steps     :5	hidden units     :50	loss     :0.5873260164583677
-Batch size     :10	learning rate     :0.05	back_steps     :5	hidden units     :50	loss     :0.6121599808995956
-Batch size     :10	learning rate     :0.03	back_steps     :5	hidden units     :50	loss     :0.6310580895577543
-Batch size     :10	learning rate     :0.01	back_steps     :5	hidden units     :50	loss     :0.6606573913629398
+Batch size     :10	learning rate     :0.9	back_steps     :3	hidden units     :100	loss     :0.517831495545383 Accuracy: 0.740
+Batch size     :1	learning rate     :0.9	back_steps     :3	hidden units     :100	loss     :0.5878291425503771 Accuracy: 0.759
+Batch size     :10	learning rate     :0.9	back_steps     :3	hidden units     :75	loss     :0.5034403763582074 Accuracy: 0.76
+Batch size     :1	learning rate     :0.9	back_steps     :3	hidden units     :75	loss     :0.5649126151865256 Accuracy: 0.756
+Batch size     :10	learning rate     :0.9	back_steps     :3	hidden units     :50	loss     :0.4996270894223961 Accuracy: 0.769
+Batch size     :1	learning rate     :0.9	back_steps     :3	hidden units     :50	loss     :0.5237302239246405 Accuracy: 0.776
+Batch size     :10	learning rate     :0.9	back_steps     :3	hidden units     :25	loss     :0.48228154910979576 Accuracy: 0.769
+Batch size     :1	learning rate     :0.9	back_steps     :3	hidden units     :25	loss     :0.507610504870875 Accuracy: 0.790
+Batch size     :10	learning rate     :0.9	back_steps     :4	hidden units     :100	loss     :0.5083028619291644 Accuracy: 0.751
+Batch size     :1	learning rate     :0.9	back_steps     :4	hidden units     :100	loss     :0.6520423773824225 Accuracy: 0.683
+Batch size     :10	learning rate     :0.9	back_steps     :4	hidden units     :75	loss     :0.5084029026089499 Accuracy: 0.750
+Batch size     :1	learning rate     :0.9	back_steps     :4	hidden units     :75	loss     :0.5421425714576006 Accuracy: 0.758
+Batch size     :10	learning rate     :0.9	back_steps     :4	hidden units     :50	loss     :0.49291598269458237 Accuracy: 0.777
+Batch size     :1	learning rate     :0.9	back_steps     :4	hidden units     :50	loss     :0.5632064688677715 Accuracy: 0.754
+Batch size     :10	learning rate     :0.9	back_steps     :4	hidden units     :25	loss     :0.48291106987018007 Accuracy: 0.771
+Batch size     :1	learning rate     :0.9	back_steps     :4	hidden units     :25	loss     :0.5224424162834379 Accuracy: 0.759
+Batch size     :10	learning rate     :0.9	back_steps     :5	hidden units     :100	loss     :0.5106357941703363 Accuracy: 0.758
+Batch size     :1	learning rate     :0.9	back_steps     :5	hidden units     :100	loss     :0.5235406450105274 Accuracy: 0.771
+Batch size     :10	learning rate     :0.9	back_steps     :5	hidden units     :75	loss     :0.4972190957819286 Accuracy: 0.754
+Batch size     :1	learning rate     :0.9	back_steps     :5	hidden units     :75	loss     :0.5513495636995691 Accuracy: 0.771
+Batch size     :10	learning rate     :0.9	back_steps     :5	hidden units     :50	loss     :0.4964373237905706 Accuracy: 0.773
+Batch size     :1	learning rate     :0.9	back_steps     :5	hidden units     :50	loss     :0.5308165075976139 Accuracy: 0.773
+Batch size     :10	learning rate     :0.9	back_steps     :5	hidden units     :25	loss     :0.48760804382572864 Accuracy: 0.776
+Batch size     :1	learning rate     :0.9	back_steps     :5	hidden units     :25	loss     :0.5346097266213299 Accuracy: 0.764
+Batch size     :10	learning rate     :0.7	back_steps     :3	hidden units     :100	loss     :0.51567128320931 Accuracy: 0.761
+Batch size     :1	learning rate     :0.7	back_steps     :3	hidden units     :100	loss     :0.578917789100575 Accuracy: 0.773
+Batch size     :10	learning rate     :0.7	back_steps     :3	hidden units     :75	loss     :0.4995198522530965 Accuracy: 0.767
+Batch size     :1	learning rate     :0.7	back_steps     :3	hidden units     :75	loss     :0.5352719577552209 Accuracy: 0.760
+Batch size     :10	learning rate     :0.7	back_steps     :3	hidden units     :50	loss     :0.5022057275600977 Accuracy: 0.763
+Batch size     :1	learning rate     :0.7	back_steps     :3	hidden units     :50	loss     :0.5370433617500033 Accuracy: 0.772
+Batch size     :10	learning rate     :0.7	back_steps     :3	hidden units     :25	loss     :0.4920669241044611 Accuracy: 0.776
+Batch size     :1	learning rate     :0.7	back_steps     :3	hidden units     :25	loss     :0.5175333297614891 Accuracy: 0.768
+Batch size     :10	learning rate     :0.7	back_steps     :4	hidden units     :100	loss     :0.5224024617277538 Accuracy: 0.742
+Batch size     :1	learning rate     :0.7	back_steps     :4	hidden units     :100	loss     :0.5407089474958913 Accuracy: 0.725
+Batch size     :10	learning rate     :0.7	back_steps     :4	hidden units     :75	loss     :0.5248165445872515 Accuracy: 0.755
+Batch size     :1	learning rate     :0.7	back_steps     :4	hidden units     :75	loss     :0.5202202907931495 Accuracy: 0.770
+Batch size     :10	learning rate     :0.7	back_steps     :4	hidden units     :50	loss     :0.48571428024271496 Accuracy: 0.791
+Batch size     :1	learning rate     :0.7	back_steps     :4	hidden units     :50	loss     :0.5139989553175759 Accuracy: 0.767
+Batch size     :10	learning rate     :0.7	back_steps     :4	hidden units     :25	loss     :0.4938262456930075 Accuracy: 0.775
+Batch size     :1	learning rate     :0.7	back_steps     :4	hidden units     :25	loss     :0.5248618200235754 Accuracy: 0.763
+Batch size     :10	learning rate     :0.7	back_steps     :5	hidden units     :100	loss     :0.5085666367873112 Accuracy: 0.768
+Batch size     :1	learning rate     :0.7	back_steps     :5	hidden units     :100	loss     :0.5638564141650698 Accuracy: 0.755
+Batch size     :10	learning rate     :0.7	back_steps     :5	hidden units     :75	loss     :0.5064550845237427 Accuracy: 0.765
+Batch size     :1	learning rate     :0.7	back_steps     :5	hidden units     :75	loss     :0.5511342447297429 Accuracy: 0.740
+Batch size     :10	learning rate     :0.7	back_steps     :5	hidden units     :50	loss     :0.502924653735726 Accuracy: 0.762
+Batch size     :1	learning rate     :0.7	back_steps     :5	hidden units     :50	loss     :0.5944598113952287 Accuracy: 0.762
+Batch size     :10	learning rate     :0.7	back_steps     :5	hidden units     :25	loss     :0.49710245515147194 Accuracy: 0.764
+Batch size     :1	learning rate     :0.7	back_steps     :5	hidden units     :25	loss     :0.47682293339015025 Accuracy: 0.775
+Batch size     :10	learning rate     :0.5	back_steps     :3	hidden units     :100	loss     :0.5107004038859082 Accuracy: 0.752
+Batch size     :1	learning rate     :0.5	back_steps     :3	hidden units     :100	loss     :0.5365741366173422 Accuracy: 0.754
+Batch size     :10	learning rate     :0.5	back_steps     :3	hidden units     :75	loss     :0.5033142972851645 Accuracy: 0.763
+Batch size     :1	learning rate     :0.5	back_steps     :3	hidden units     :75	loss     :0.5502045675679071 Accuracy: 0.730
+Batch size     :10	learning rate     :0.5	back_steps     :3	hidden units     :50	loss     :0.49203141016661184 Accuracy: 0.772
+Batch size     :1	learning rate     :0.5	back_steps     :3	hidden units     :50	loss     :0.5057455924485683 Accuracy: 0.760
+Batch size     :10	learning rate     :0.5	back_steps     :3	hidden units     :25	loss     :0.5048625073548831 Accuracy: 0.778
+Batch size     :1	learning rate     :0.5	back_steps     :3	hidden units     :25	loss     :0.4894399620188851 Accuracy: 0.771
+Batch size     :10	learning rate     :0.5	back_steps     :4	hidden units     :100	loss     :0.49455815465230063 Accuracy: 0.762
+Batch size     :1	learning rate     :0.5	back_steps     :4	hidden units     :100	loss     :0.5547096240170271 Accuracy: 0.755
+Batch size     :10	learning rate     :0.5	back_steps     :4	hidden units     :75	loss     :0.5135262422420324 Accuracy: 0.757
+Batch size     :1	learning rate     :0.5	back_steps     :4	hidden units     :75	loss     :0.5075103872321007 Accuracy: 0.786
+Batch size     :10	learning rate     :0.5	back_steps     :4	hidden units     :50	loss     :0.5286637731420328 Accuracy: 0.741
+Batch size     :1	learning rate     :0.5	back_steps     :4	hidden units     :50	loss     :0.5163334689141916 Accuracy: 0.760
+Batch size     :10	learning rate     :0.5	back_steps     :4	hidden units     :25	loss     :0.5243994628225834 Accuracy: 0.746
+Batch size     :1	learning rate     :0.5	back_steps     :4	hidden units     :25	loss     :0.48831916537400494 Accuracy: 0.778
+Batch size     :10	learning rate     :0.5	back_steps     :5	hidden units     :100	loss     :0.501557195037449 Accuracy: 0.769
+Batch size     :1	learning rate     :0.5	back_steps     :5	hidden units     :100	loss     :0.5195243534719514 Accuracy: 0.751
+Batch size     :10	learning rate     :0.5	back_steps     :5	hidden units     :75	loss     :0.505796359397989 Accuracy: 0.772
+Batch size     :1	learning rate     :0.5	back_steps     :5	hidden units     :75	loss     :0.5521377301793874 Accuracy: 0.756
+Batch size     :10	learning rate     :0.5	back_steps     :5	hidden units     :50	loss     :0.5143669503005684 Accuracy: 0.758
+Batch size     :1	learning rate     :0.5	back_steps     :5	hidden units     :50	loss     :0.4932328052845703 Accuracy: 0.774
+Batch size     :10	learning rate     :0.5	back_steps     :5	hidden units     :25	loss     :0.5329694652588095 Accuracy: 0.729
+Batch size     :1	learning rate     :0.5	back_steps     :5	hidden units     :25	loss     :0.5168804347962385 Accuracy: 0.764

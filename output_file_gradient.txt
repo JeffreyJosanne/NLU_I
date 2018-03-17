@@ -1,0 +1,22 @@
+Batch size     : 50 learning rate     : 0.9  back_steps     : 5  hidden units     : 25  loss     : 4.864589042393317
+Batch size     : 50 learning rate     : 0.7  back_steps     : 5  hidden units     : 25  loss     : 4.8386805366068755
+Batch size     : 50 learning rate     : 0.5  back_steps     : 5  hidden units     : 25  loss     : 4.863415033199989
+Batch size     : 50 learning rate     : 0.3  back_steps     : 5  hidden units     : 25  loss     : 4.900549091029382
+Batch size     : 50 learning rate     : 0.1  back_steps     : 5  hidden units     : 25  loss     : 5.011424752927968
+Batch size     : 50 learning rate     : 0.07  back_steps     : 5  hidden units     : 25  loss     : 5.100979979827883
+Batch size     : 50 learning rate     : 0.05  back_steps     : 5  hidden units     : 25  loss     : 5.174046016627285
+Batch size     : 50 learning rate     : 0.03  back_steps     : 5  hidden units     : 25  loss     : 5.341711500925406
+Batch size     : 50 learning rate     : 0.01  back_steps     : 5  hidden units     : 25  loss     : 5.691210185466038
+Batch size     : 50 learning rate     : 0.7  back_steps     : 1  hidden units     : 25  loss     : 4.868332944602047
+Batch size     : 50 learning rate     : 0.7  back_steps     : 3  hidden units     : 25  loss     : 4.847804432375361
+Batch size     : 50 learning rate     : 0.7  back_steps     : 5  hidden units     : 25  loss     : 4.842663761221316
+Batch size     : 50 learning rate     : 0.7  back_steps     : 5  hidden units     : 25  loss     : 4.87538353881826
+Batch size     : 50 learning rate     : 0.7  back_steps     : 5  hidden units     : 50  loss     : 4.853697730367474
+Batch size     : 50 learning rate     : 0.7  back_steps     : 5  hidden units     : 100  loss     : 4.840843221568911
+Batch size     : 50 learning rate     : 0.7  back_steps     : 5  hidden units     : 200  loss     : 4.961353442753109
+Batch size     : 50 learning rate     : 0.7  back_steps     : 5  hidden units     : 500  loss     : 16.752059780319254
+Batch size     : 100 learning rate     : 0.7  back_steps     : 5  hidden units     : 25  loss     : 4.958191930724449
+Batch size     : 50 learning rate     : 0.7  back_steps     : 5  hidden units     : 25  loss     : 4.8386805366068755
+Batch size     : 10 learning rate     : 0.7  back_steps     : 5  hidden units     : 25  loss     : 4.678224914843454
+Batch size     : 1learning rate     : 0.7  back_steps     : 5  hidden units     : 25  loss     : 4.647631931434246
+Batch size     : 50learning rate     : 1.0  back_steps     : 5  hidden units     : 25  loss     : 4.873057394063117

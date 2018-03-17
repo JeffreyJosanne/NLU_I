@@ -1,0 +1,6 @@
+Batch size     :1	learning rate     :0.5	back_steps     :4	hidden units     :25	loss     :0.49099936026820357 Accuracy: 0.765
+Batch size     :1	learning rate     :0.5	back_steps     :5	hidden units     :25	loss     :0.5046112246114777 Accuracy: 0.760
+Batch size     :1	learning rate     :0.7	back_steps     :4	hidden units     :25	loss     :0.5067740159692198 Accuracy: 0.791
+Batch size     :1	learning rate     :0.7	back_steps     :5	hidden units     :25	loss     :0.4938078014070129 Accuracy: 0.773
+Batch size     :1	learning rate     :0.9	back_steps     :4	hidden units     :25	loss     :0.49016438307219723 Accuracy: 0.783
+Batch size     :1	learning rate     :0.9	back_steps     :5	hidden units     :25	loss     :0.5165367109032967 Accuracy: 0.758

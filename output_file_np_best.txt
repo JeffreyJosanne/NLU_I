@@ -1,0 +1,32 @@
+Batch size     :1	learning rate     :0.5	back_steps     :4	hidden units     :25	loss     :0.20827492063672923
+Accuracy: 0.91
+Batch size     :10	learning rate     :0.5	back_steps     :4	hidden units     :25	loss     :0.2295482212353084
+Accuracy: 0.902
+Batch size     :1	learning rate     :0.5	back_steps     :4	hidden units     :50	loss     :0.19885310704222378
+Accuracy: 0.905
+Batch size     :10	learning rate     :0.5	back_steps     :4	hidden units     :50	loss     :0.22557669532367364
+Accuracy: 0.905
+Batch size     :1	learning rate     :0.5	back_steps     :5	hidden units     :25	loss     :0.20779678131503404
+Accuracy: 0.913
+Batch size     :10	learning rate     :0.5	back_steps     :5	hidden units     :25	loss     :0.22395774372806088
+Accuracy: 0.902
+Batch size     :1	learning rate     :0.5	back_steps     :5	hidden units     :50	loss     :0.20599138353762375
+Accuracy: 0.92
+Batch size     :10	learning rate     :0.5	back_steps     :5	hidden units     :50	loss     :0.23627544152986435
+Accuracy: 0.902
+Batch size     :1	learning rate     :0.7	back_steps     :4	hidden units     :25	loss     :0.2173978537657245
+Accuracy: 0.912 <---- this is the one we should use as per the results in output_file_np_grad
+Batch size     :10	learning rate     :0.7	back_steps     :4	hidden units     :25	loss     :0.21646377016056279
+Accuracy: 0.905
+Batch size     :1	learning rate     :0.7	back_steps     :4	hidden units     :50	loss     :0.23650038175888566
+Accuracy: 0.902
+Batch size     :10	learning rate     :0.7	back_steps     :4	hidden units     :50	loss     :0.19930565623532412
+Accuracy: 0.905
+Batch size     :1	learning rate     :0.7	back_steps     :5	hidden units     :25	loss     :0.2189269417907748
+Accuracy: 0.919
+Batch size     :10	learning rate     :0.7	back_steps     :5	hidden units     :25	loss     :0.21237872161100715
+Accuracy: 0.907
+Batch size     :1	learning rate     :0.7	back_steps     :5	hidden units     :50	loss     :0.23012673473566986
+Accuracy: 0.9
+Batch size     :10	learning rate     :0.7	back_steps     :5	hidden units     :50	loss     :0.21280397128588147
+Accuracy: 0.907

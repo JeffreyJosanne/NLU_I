@@ -707,19 +707,21 @@ if __name__ == "__main__":
 		# --- your code here --- #
 		##########################
 		# learning_rate = [0.9, 0.7,0.5,0.3,0.1,0.07,0.05,0.03,0.01]
-		learning_rate = [0.7]
+		learning_rate = [0.8,0.9]
 		# back_steps = [0,1,2,3,4,5]
 		back_steps = [5]
 		# hidden_units = [25, 50, 75, 100, 200, 400, 500]
-		hidden_units = [50]
+		hidden_units = [25]
 		# batch_size = [1, 10, 50]
-		batch_size = [10]
+		batch_size = [1]
 		grid = np.zeros((len(learning_rate), len(back_steps), len(hidden_units)))
 		for lr in range(len(learning_rate)):
 			for bs in range(len(back_steps)):
 				for hu in range(len(hidden_units)):
 					for bat_size in range(len(batch_size)):
 						model = RNN(vocab_size, hidden_units[hu], vocab_size)
+
+		# get the data set vocabulary
 						loss = model.train(X_train, D_train, X_dev, D_dev, epochs=10, learning_rate=learning_rate[lr],anneal=5, back_steps=back_steps[bs], batch_size=batch_size[bat_size], min_change=0.0001, log=True)
 						grid[lr][bs][hu] = loss
 						print(loss)
@@ -738,7 +740,7 @@ if __name__ == "__main__":
 		'''
 
 		data_folder = sys.argv[2]
-		train_size = 25000
+		train_size = 1000
 		dev_size = 1000
 		vocab_size = 2000
 
@@ -747,7 +749,7 @@ if __name__ == "__main__":
 		lr = float(sys.argv[5])
 
 		# get the data set vocabulary
-		vocab = pd.read_table(data_folder + "/vocab.ptb.txt", header=None, sep="\s+", index_col=0, names=['count', 'freq'], )
+		vocab = pd.read_table(data_folder + "/vocab.wiki.txt", header=None, sep="\s+", index_col=0, names=['count', 'freq'], )
 		num_to_word = dict(enumerate(vocab.index[:vocab_size]))
 		word_to_num = invert_dict(num_to_word)
 
@@ -755,12 +757,12 @@ if __name__ == "__main__":
 		fraction_lost = fraq_loss(vocab, word_to_num, vocab_size)
 		print("Retained %d words from %d (%.02f%% of all tokens)\n" % (vocab_size, len(vocab), 100*(1-fraction_lost)))
 
-		docs = load_dataset(data_folder + '/ptb-train.txt')
+		docs = load_lm_dataset(data_folder + '/wiki-train.txt')
 		S_train = docs_to_indices(docs, word_to_num)
 		X_train, D_train = seqs_to_lmXY(S_train)
 
 		# Load the dev set (for tuning hyperparameters)
-		docs = load_dataset(data_folder + '/ptb-dev.txt')
+		docs = load_lm_dataset(data_folder + '/wiki-dev.txt')
 		S_dev = docs_to_indices(docs, word_to_num)
 		X_dev, D_dev = seqs_to_lmXY(S_dev)
 
@@ -773,8 +775,8 @@ if __name__ == "__main__":
 		# this is the best expected loss out of that set
 		q = vocab.freq[vocab_size] / sum(vocab.freq[vocab_size:])
 
-		model_final = RNN(vocab_size, 50)
-		model_final.train(X_train, D_train, X_dev, D_dev, epochs=10, learning_rate=0.5, anneal=5, back_steps=2, batch_size=100, min_change=0.0001, log=True)
+		model_final = RNN(vocab_size, 50, vocab_size)
+		model_final.train(X_train, D_train, X_dev, D_dev, epochs=10, learning_rate=0.5, anneal=5, back_steps=4, batch_size=1, min_change=0.0001, log=True)
 		np.save("rnn.U.npy", model_final.U)
 		np.save("rnn.V.npy", model_final.V)
 		np.save("rnn.W.npy", model_final.W)
@@ -796,7 +798,7 @@ if __name__ == "__main__":
 		starter code for parameter estimation.
 		change this to different values, or use it to get you started with your own testing class
 		'''
-		train_size = 1000
+		train_size = 10
 		dev_size = 1000
 		vocab_size = 2000
 
@@ -832,14 +834,14 @@ if __name__ == "__main__":
 
 		##########################
 		# --- your code here --- #
-		learning_rate = [0.9, 0.7,0.5,0.3,0.1,0.07,0.05,0.03,0.01]
+		learning_rate = [0.7]
 		# learning_rate = [0.7]
 		# back_steps = [0,1,2,3,4,5]
-		back_steps  = [5]
+		back_steps  = [4]
 		# hidden_units = [25, 50, 75, 100, 200, 400, 500]
-		hidden_units = [50]
+		hidden_units = [25]
 		# batch_size = [1, 10, 50]
-		batch_size = [10]
+		batch_size = [1]
 		grid = np.zeros((len(learning_rate), len(back_steps), len(hidden_units)))
 		for lr in range(len(learning_rate)):
 			for bs in range(len(back_steps)):
@@ -847,18 +849,29 @@ if __name__ == "__main__":
 					for bat_size in range(len(batch_size)):
 						model = RNN(vocab_size, hidden_units[hu], vocab_size)
 						loss = model.train_np(X_train, D_train, X_dev, D_dev, epochs=10, learning_rate=learning_rate[lr],anneal=5, back_steps=back_steps[bs], batch_size=batch_size[bat_size], min_change=0.0001, log=True)
-						grid[lr][bs][hu] = loss
+						acc = 0
+						temp_acc = 0
+						faulty_file = open('faulty_sents.txt','a')
+						for i in range(len(X_dev)):
+							temp_acc = model.compute_acc_np(X_dev[i], D_dev[i])
+							acc += temp_acc
+							# faulty_file.write(X_dev[i]+'\t'+str(temp_acc)+'\n')
+							print(X_dev[i], D_dev[i])
+						acc /= len(X_dev)
+						#grid[lr][bs][hu] = loss
+						#grid[lr][bs][hu] = acc
 						print(loss)
 						print(lr)
 						print(bs)
 						print(hu)
 						print()
-						output_file = open('output_file_np_grad.txt','a')
-						output_file.write('Batch size     :'+ str(batch_size[bat_size])+ '	learning rate     :'+ str(learning_rate[lr])+'	back_steps     :'+str(back_steps[bs])+'	hidden units     :'+str(hidden_units[hu])+'	loss     :'+str(loss))
+						output_file = open('output_file_np.txt','a')
+						output_file.write('Batch size     :'+ str(batch_size[bat_size])+ '	learning rate     :'+ str(learning_rate[lr])+'	back_steps     :'+str(back_steps[bs])+'	hidden units     :'+str(hidden_units[hu])+'	loss     :'+str(loss)+'\n')
+						output_file.write("Accuracy: "+ str(acc)+'\n')
 						output_file.close()
 		##########################
 
-		acc = 0.
+		#acc = 0.
 
 		print("Accuracy: %.03f" % acc)
 

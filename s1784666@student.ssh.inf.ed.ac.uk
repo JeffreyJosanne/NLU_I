@@ -1,9 +1,0 @@
-﻿2. Answers:
-
-
-
-
-i) Policy improvement procedure would be apt to apply in this scenario. No, the policy cannot be stochastic as the policy improvement algorithm itself finds only the action and state with the maximum value function. Also it is a greedy algorithm without any beam windows and so the algorithm only produces a deterministic policy.
-
-
-ii) It will converge at an optimal policy if we change the reward function in the middle of policy iteration. Also, it needs to be clear that middle means at the end of any individual iteration of policy iteration. For an iteration, the policy is evaluated for all the states with a particular reward function and for the next iteration, if the reward function is changed, it would again evaluate the policy from that timestep. The scale will be different but the convergence(or difference between value functions of two consecutive iterations) will be made. Also it is worthy to note that convergence will definitely not be attained at that iteration where the reward function is changed as the difference might be huge.
